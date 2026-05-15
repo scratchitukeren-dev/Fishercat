@@ -24,6 +24,10 @@ Fishercat compiles your text file character by character. Depending on what lett
 | `o` | `Mod data` | 
 | `m` | `Minus data by 5` | 
 | `p` | `Plus data` |
+| `t` | `To the power of data` |
+| `a` | `Asterisk data` |
+| `Other letter` | `Nothing` |
+
 
 ---
 
