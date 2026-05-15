@@ -1,0 +1,120 @@
+# Fishercat by scratchitukeren-dev
+#!/bin/bash
+echo "      fishercat      "
+
+data_table=""
+
+file_input="$1"
+
+if [ -z "$file_input" ]; then
+    echo "Error: Not a valid file! type "sh fishercat help" for more info!"
+    exit 1
+elif [ "$file_input" == "help" ]; then
+    echo "How to use: sh fishercat test.txt"
+    exit 1
+fi
+
+printf "file: %s\n" "$file_input"
+
+while IFS= read -r -n 1 char; do
+
+    if [ -z "$char" ]; then
+        data_table+="00"
+        echo "still fishing lol!!"
+
+    elif [ "$char" == "r" ]; then
+        data_table+="$RANDOM"
+        echo "still fishing lol!!"
+
+    elif [ "$char" == "d" ]; then
+        data_table+="$(date +%H%M%S%Y%m%d)"
+        echo "still fishing lol!!"
+
+    elif [ "$char" == "a" ]; then
+        let "data_table=data_table*$data_table"
+        echo "still fishing lol!!"
+
+    elif [ "$char" == "c" ]; then
+        data_table+="$data_table"
+        echo "still fishing lol!!"
+
+    elif [ "$char" == "i" ]; then
+        data_table+="1"
+        echo "still fishing lol!!"
+
+    elif [ "$char" == "p" ]; then
+        let "data_table=data_table+$data_table"
+        echo "still fishing lol!!"
+
+    elif [ "$char" == "m" ]; then
+        let "data_table=data_table-6"
+        echo "still fishing lol!!"
+
+    elif [ "$char" == "s" ]; then
+        let "data_table=data_table/$data_table"
+        echo "still fishing lol!!"
+
+    elif [ "$char" == "o" ]; then
+        let "data_table=data_table%$data_table"
+        echo "still fishing lol!!"
+
+    elif [ "$char" == "t" ]; then
+        let "data_table=data_table**$data_table"
+        echo "still fishing lol!!"
+
+    else
+        echo "still fishing lol!!"
+    fi
+
+done < "$file_input"
+
+echo "Data Table: $data_table"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
