@@ -13,16 +13,16 @@ Despite only catching garbage, the cat never gives up and just says: **"still fi
 Fishercat compiles your text file character by character. Depending on what letter the cat "fishes" out, it appends a specific piece of digital trash to the `Data Table`:
 
 
-| Character caught | What the cat actually pulls out | Visual Meaning / Garbage Type |
-| :---: | :--- | :--- |
-| `[Space/Enter]` | `00` | Empty water bubbles 🫧 |
-| `r` | `$RANDOM` | A piece of random junk number 🎲 |
-| `d` | `Current Timestamp` | A rusty digital clock floating by ⏰ |
-| `s` | `[]` | An empty treasure chest 🧰 |
-| `c` | `Duplicates current data` | Data multiplier effect! 🧬 |
-| `i` | `\|` | The straight fishing line 🧵 |
-| `y` | `~` | Ocean waves ripples 🌊 |
-| `m` | `{{` | Shiny fish scales or double hooks 🪝 |
+| Character | What it do |  
+| :---: | :--- | 
+| `[Space/Enter]` | `Add 00 to Data Table` | 
+| `r` | `Add RANDOM Number to Data Table` | 
+| `d` | `Add Current Timestamp to Data Table` | 
+| `s` | `` | 
+| `c` | `Duplicates current data` | 
+| `i` | `\|` | 
+| `y` | `~` | 
+| `m` | `{{` | 
 
 ---
 
