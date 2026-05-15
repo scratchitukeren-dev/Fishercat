@@ -1,6 +1,5 @@
-# Fishercat by scratchitukeren-dev
-#!/bin/bash
-echo "      fishercat      "
+# Fishercat by pinapel-dev123
+echo "> FISHERCAT <"
 
 data_table=""
 
@@ -14,7 +13,7 @@ elif [ "$file_input" == "help" ]; then
     exit 1
 fi
 
-printf "file: %s\n" "$file_input"
+printf "Your file is: %s\n" "$file_input"
 
 while IFS= read -r -n 1 char; do
 
@@ -67,6 +66,8 @@ while IFS= read -r -n 1 char; do
     fi
 
 done < "$file_input"
+
+echo "Ok, Done!"
 
 echo "Data Table: $data_table"
 
