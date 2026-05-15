@@ -18,11 +18,12 @@ Fishercat compiles your text file character by character. Depending on what lett
 | `[Space/Enter]` | `Add 00 to Data Table` | 
 | `r` | `Add RANDOM Number to Data Table` | 
 | `d` | `Add Current Timestamp to Data Table` | 
-| `s` | `` | 
+| `s` | `Divide data` | 
 | `c` | `Duplicates current data` | 
-| `i` | `\|` | 
-| `y` | `~` | 
-| `m` | `{{` | 
+| `i` | `Add 1 to Data Table` | 
+| `o` | `Mod data` | 
+| `m` | `Minus data by 5` | 
+| `p` | `Plus data` |
 
 ---
 
